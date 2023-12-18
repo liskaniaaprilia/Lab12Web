@@ -11,7 +11,7 @@ Untuk menjalankan MySQL Server dari menu XAMPP Contol.
 ## 2. Membuat Database: Login
 
 ```PHP
-CREATE TABLE `user`(
+CREATE TABLE `tb_pengguna`(
 `id` INT NOT NULL AUTO_INCREMENT,
 `username` VARCHAR(50),
 `password` VARCHAR(50),
@@ -23,7 +23,7 @@ UNIQUE INDEX `UNIQUE` (`username`)
 ## 3. Menambahkan Data
 
 ```PHP
-INSERT INTO `user` (`username`, `password`) VALUES ('admin', md5('admin'));
+INSERT INTO `tb_pengguna` (`username`, `password`) VALUES ('admin', md5('admin'));
 ```
 
 ## 4. Membuat file login_session.php
